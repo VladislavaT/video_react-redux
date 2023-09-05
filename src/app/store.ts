@@ -8,7 +8,8 @@ const reducer = combineReducers({
   amount: amountReducer,
   goods: goodsReducer,
   position: positionReducer
-})
+});
+
 const store = createStore(reducer, composeWithDevTools());
 
 export type RootState = ReturnType<typeof store.getState>
